@@ -3,7 +3,12 @@ const app = express();
 
 
 app.get('/api', (_, res) => {
-    return res.sendStatus(200).end();
+    return res.json({
+        status: 200,
+        data: {
+            process: "ok"
+        }
+    }).end();
 })
 
 
