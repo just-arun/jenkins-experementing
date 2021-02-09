@@ -6,7 +6,7 @@ app.get('/api', (_, res) => {
     return res.json({
         status: 200,
         data: {
-            process: "ok"
+            process: "working"
         }
     }).end();
 })
